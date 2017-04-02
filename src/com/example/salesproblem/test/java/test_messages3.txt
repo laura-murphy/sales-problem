@@ -1,0 +1,10 @@
+Sale apple 1
+Sale apple 1 2
+Sale banana 2 3
+Sale apple 1 1
+Sale apple 1 1
+Adjust add apple 1
+Adjust subtract banana 1
+Sale apple 1 2
+Sale banana 2 3
+Adjust add apple 1

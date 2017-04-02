@@ -1,0 +1,112 @@
+Sale apple 1
+Sale apple 1 2
+Sale banana 2 3
+Sale apple 1 1
+Sale apple 1 1
+Adjust add apple 1
+Adjust subtract banana 1
+Sale banana 1 1
+Sale banana 4 2
+Adjust multiply apple 3
+Sale banana 3 3
+Adjust add apple 2
+Sale apple 8
+Sale banana 5
+Adjust add banana 1
+Adjust subtract apple 3
+Sale apple 1
+Sale apple 1 2
+Sale banana 2 3
+Sale apple 1 1
+Sale apple 1 1
+Adjust add apple 1
+Adjust add banana 1
+Sale banana 1 1
+Sale banana 4 2
+Adjust add apple 3
+Sale banana 3 3
+Adjust add apple 2
+Sale apple 8
+Sale banana 5
+Adjust add banana 1
+Adjust subtract apple 3
+Sale apple 1
+Sale apple 1 2
+Sale banana 2 3
+Sale apple 1 1
+Sale apple 1 1
+Adjust add apple 1
+Adjust add banana 1
+Sale banana 1 1
+Sale banana 4 2
+Adjust add apple 3
+Sale banana 3 3
+Adjust add apple 2
+Sale apple 8
+Sale banana 5
+Adjust add banana 1
+Adjust add apple 3
+Sale apple 1
+Sale apple 1 2
+Sale banana 2 3
+Sale apple 1 1
+Sale apple 1 1
+Adjust add apple 1
+Adjust add banana 1
+Sale banana 1 1
+Sale banana 4 2
+Adjust add apple 3
+Sale banana 3 3
+Adjust add apple 2
+Sale apple 8
+Sale banana 5
+Adjust add banana 1
+Adjust add apple 3
+Sale apple 1
+Sale apple 1 2
+Sale banana 2 3
+Sale apple 1 1
+Sale apple 1 1
+Adjust subtract apple 1
+Adjust subtract banana 1
+Sale banana 1 1
+Sale banana 4 2
+Adjust subtract apple 3
+Sale banana 3 3
+Adjust subtract apple 2
+Sale apple 8
+Sale banana 5
+Adjust subtract banana 1
+Adjust subtract apple 3
+Sale apple 1
+Sale apple 1 2
+Sale banana 2 3
+Sale apple 1 1
+Sale apple 1 1
+Adjust subtract apple 1
+Adjust subtract banana 1
+Sale banana 1 1
+Sale banana 4 2
+Adjust add apple 3
+Sale banana 3 3
+Adjust add apple 2
+Sale apple 8
+Sale banana 5
+Adjust add banana 1
+Adjust add apple 3
+Sale apple 1
+Sale apple 1 2
+Sale banana 2 3
+Sale apple 1 1
+Sale apple 1 1
+Adjust add apple 1
+Adjust add banana 1
+Sale banana 1 1
+Sale banana 4 2
+Adjust add apple 3
+Sale banana 3 3
+Adjust add apple 2
+Sale apple 8
+Sale banana 5
+Adjust add banana 1
+Adjust add apple 3

@@ -1,4 +1,4 @@
-package com.example.salesproblem;
+package com.example.salesproblem.main.java;
 
 /**
  * Created by Laura on 25/03/2017.
@@ -10,7 +10,9 @@ public class SaleAdjustment {
     /** The product type **/
     private String product;
 
-    /** The amount to apply to the cost **/
+    /**
+     * The amount to apply to the cost
+     * **/
     private int amount;
 
     /** Constructor **/
@@ -43,5 +45,14 @@ public class SaleAdjustment {
                 break;
         }
         return adjustedCost;
+    }
+
+    /**
+     * Returns the amount
+     * @return
+     */
+    public int getAmount()
+    {
+        return this.amount;
     }
 }
