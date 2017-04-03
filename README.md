@@ -13,6 +13,7 @@ Sale [product-name] [cost] *[quantity]
 examples:
 
 Sale apple 1
+
 Sale apple 1 4
 
 Add an adjustment:
@@ -28,4 +29,5 @@ Allows a text file with messages separated by line to be loaded from a single co
 Load [file-name]
 
 examples:
+
 Load test.txt
