@@ -139,14 +139,43 @@ class salesProblemTest {
     }
 
     @Test
-    void handleMessageReport()
+    void doSalesReportNoSales()
     {
-        String file = getClass().getResource("test_messages3.txt").getPath();
-        Scanner scanResult = new Scanner(getClass().getResourceAsStream("test_messages3_result.txt"));
-        String resultFile = scanResult.useDelimiter("\\Z").next();
-        boolean result = SalesProblem.processMessage("Load " + file);
-        assertEquals(true, result);
-        assertEquals(resultFile, outContent.toString().trim());
+        SalesProblem.doSalesReport();
+        assertEquals("Sales Report:" + System.lineSeparator() +
+                "0 Sales", outContent.toString().trim());
+    }
+
+    @Test
+    void doSalesReportWithSales()
+    {
+        boolean result = SalesProblem.processMessage("Sale apple 1 1");
+        SalesProblem.doSalesReport();
+
+        assertTrue(result);
+        assertEquals("Sales Report:" + System.lineSeparator() +
+                "Product Type || Number of Sales || Total Value" + System.lineSeparator() +
+                "apple || 1 || 1", outContent.toString().trim());
+    }
+
+    @Test
+    void doAdjustmentReportNoAdjustments()
+    {
+        SalesProblem.doAdjustmentReport();
+        assertEquals("Sale Adjustment Report:" + System.lineSeparator() +
+                "0 adjustments", outContent.toString().trim());
+    }
+
+    @Test
+    void doAdjustmentReportWithAdjustments()
+    {
+        boolean result = SalesProblem.processMessage("Adjust add apple 1");
+        SalesProblem.doAdjustmentReport();
+
+        assertTrue(result);
+        assertEquals("Sale Adjustment Report:" + System.lineSeparator() +
+                "Product Type || Adjustment Type || Amount" + System.lineSeparator() +
+                "apple || add || 1", outContent.toString().trim());
     }
 
 }

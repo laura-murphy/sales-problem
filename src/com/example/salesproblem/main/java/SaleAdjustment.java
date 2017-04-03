@@ -55,4 +55,13 @@ public class SaleAdjustment {
     {
         return this.amount;
     }
+
+    /**
+     * Returns the operation
+     * @return
+     */
+    public String getOperation()
+    {
+        return this.operation;
+    }
 }

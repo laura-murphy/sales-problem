@@ -1,0 +1,4 @@
+Sales Report:
+Product Type || Number of Sales || Total Value
+apple || 7 || 19
+banana || 6 || 9

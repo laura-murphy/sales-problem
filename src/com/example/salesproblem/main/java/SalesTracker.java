@@ -109,4 +109,10 @@ public class SalesTracker {
     {
         return this.productTotals;
     }
+
+    /**
+     * Gets all sale adjustments
+     * @return
+     */
+    public List<SaleAdjustment> GetTotalAdjustments() { return this.saleAdjustments;}
 }

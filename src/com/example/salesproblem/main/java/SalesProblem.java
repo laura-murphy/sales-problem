@@ -114,6 +114,54 @@ public class SalesProblem {
         return false;
     }
 
+    /**
+     * Writes out the sales report
+     */
+    public static void doSalesReport() {
+        List<ProductTotals> totals = salesTracker.GetTotalSales();
+        System.out.println("Sales Report:");
+
+        // Zero sales
+        if(totals.size()==0)
+        {
+            System.out.println("0 Sales");
+            return;
+        }
+
+        // There were some sales
+        System.out.println("Product Type || Number of Sales || Total Value");
+        for(ProductTotals total : totals)
+        {
+            System.out.println(total.getProductType() + " || " +
+                    total.getNumberOfSales() + " || " +
+                    total.getTotalCost());
+        }
+    }
+
+    /**
+     *  Writes out the adjustment report
+     */
+    public static void doAdjustmentReport() {
+        List<SaleAdjustment> adjustments = salesTracker.GetTotalAdjustments();
+        System.out.println("Sale Adjustment Report:");
+
+        // Zero adjustments
+        if(adjustments.size()==0)
+        {
+            System.out.println("0 adjustments");
+            return;
+        }
+
+        // There are adjustments
+        System.out.println("Product Type || Adjustment Type || Amount");
+        for(SaleAdjustment adjustment : adjustments)
+        {
+            System.out.println(adjustment.getProduct() + " || " +
+                    adjustment.getOperation() + " || " +
+                    adjustment.getAmount());
+        }
+    }
+
     /** ProcessSale adjustment messages **/
     private static boolean processAdjustMessage(String[] messageParts)
     {
@@ -229,26 +277,15 @@ public class SalesProblem {
 
     private static void handleReporting()
     {
-        if(messageCounter%intervalToSalesReport==0)
+        if(messageCounter%50==0)
         {
-            List<ProductTotals> totals = salesTracker.GetTotalSales();
-            System.out.println("Sales Report:");
-
-            // Zero sales
-            if(totals.size()==0)
-            {
-                System.out.println("0 Sales");
-                return;
-            }
-
-            // There were some sales
-            System.out.println("Product Type || Number of Sales || Total Value");
-            for(ProductTotals total : totals)
-            {
-                System.out.println(total.getProductType().toString() + " || " +
-                        total.getNumberOfSales() + " || " +
-                        total.getTotalCost());
-            }
+            doAdjustmentReport();
+        }
+        else if(messageCounter%intervalToSalesReport==0)
+        {
+            doSalesReport();
         }
     }
+
+
 }
