@@ -18,7 +18,7 @@ Sale apple 1 4
 
 Add an adjustment:
 
-Adjust [operation] [product-name] [amount]
+Adjust [add | subtract | multiply] [product-name] [amount]
 
 example:
 Adjust add apple 1
